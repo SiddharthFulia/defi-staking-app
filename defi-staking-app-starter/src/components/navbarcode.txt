@@ -1,0 +1,23 @@
+<Box sx={{ flexGrow: 1 }}>
+      <AppBar position="static">
+        <Toolbar>
+          {/* <IconButton
+            // size="large"
+            edge="start"
+            color="inherit"
+            aria-label="menu"
+            sx={{ mr: 2 }}
+          > */}
+            {/* <MenuIcon /> */}
+            <img src={bank} alt="Not Loaded" style={{width:'70px',height:'45px'}} />
+          {/* </IconButton> */}
+          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+          &nbsp;DAPP yeilding application(Decentralized Banking) {/* &nbsp; gives small white space after it  */}
+          </Typography>
+          {/* <Button color="inherit">Login</Button> */}
+          <Typography>
+            Account Number:{props.account}
+          </Typography>
+        </Toolbar>
+      </AppBar>
+    </Box>

@@ -1,0 +1,16 @@
+1.hijacked error 
+solution:delete .json files from build/contracts(shift delete them) and compile again (truffle migrate --reset)
+2.In case of failue of truffle test remove the first line in code which appeared saying const { assert } = require('console');
+3.In stacking check in test folder comment out first 2 lines of trnsferfrom function in Tether.sol and it works.
+4.If truffle test is showing error for a particular function,make sure that the function is public.
+5.After react connection if modules are missing,execute the following command
+npm ci
+This will fix all node modules in package-lock.json file.
+6.If using MUI with the project,update the react version from 16 to the latest(at the time of writing is 18).Then install MUI if still error use command --force and install to solve the error.
+7.After the command (truffle init) add the follwing line in truffle-config.js in the end before closing
+(contracts_build_directory:'./src/contracts',)
+this will help to read contracts from src folder itself as react cannot access components outside the src folder for security reasons
+8.In react while coding the staking unstaking function,kepp in mind the 
+(transactionHash)
+is case sensitive 
+

@@ -1,0 +1,13 @@
+truffle compile
+truffle migrate
+truffle migrate --reset
+truffle console
+accounts = await web3.eth.getAccounts()
+accounts[0] //to get account address
+To get balance:
+balance = await tehter.balanceof(accounts[1])
+balance.toString()
+convertbalance= web3.utils.fromWei(balance) //convert balance from wei to eth
+truffle test
+truffle exec .\src\scripts\issue-tokens.js //to test reward token issuing function
+npm install react-scripts //while starting to build react components
